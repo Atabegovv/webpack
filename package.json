@@ -1,0 +1,62 @@
+{
+    "homepage": "https://atabegovv.github.io/webpack",
+    "scripts": {
+        "start": "NODE_ENV=development webpack serve",
+        "build": "webpack",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "eslint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+        "eslint-fix": "eslint --ext .js,.jsx,.ts,.tsx ./ --fix",
+        "stylelint": "stylelint \"src/{**/*,*}.{css,scss,sass}\"",
+        "stylelint-fix": "stylelint \"src/{**/*,*}.{css,scss,sass}\" --fix",
+        "prettier-check": "prettier --check ./",
+        "prettier": "prettier --write ./"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.24.1",
+        "@babel/core": "^7.24.4",
+        "@babel/preset-react": "^7.24.1",
+        "@types/react": "^18.2.75",
+        "@types/react-dom": "^18.2.24",
+        "@types/react-router-dom": "^5.3.3",
+        "babel-loader": "^9.1.3",
+        "cross-env": "^7.0.3",
+        "css-loader": "^7.1.1",
+        "gh-pages": "^6.1.1",
+        "globals": "^15.0.0",
+        "html-webpack-plugin": "^5.6.0",
+        "pre-commit": "^1.2.2",
+        "prettier": "^3.2.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router": "^6.22.3",
+        "react-router-dom": "^6.22.3",
+        "style-loader": "^4.0.0",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.4.5",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.0.0",
+        "@typescript-eslint/eslint-plugin": "^7.6.0",
+        "@typescript-eslint/parser": "^7.6.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^17.2.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-react": "^7.34.1",
+        "eslint-webpack-plugin": "^4.1.0",
+        "stylelint": "^16.3.1",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-standard": "^36.0.0",
+        "stylelint-webpack-plugin": "^5.0.0"
+    },
+    "pre-commit": [
+        "stylelint",
+        "eslint",
+        "prettier-check"
+    ]
+}
