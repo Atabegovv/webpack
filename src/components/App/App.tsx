@@ -1,10 +1,14 @@
 import React, { FC } from 'react';
+import { ColorSchemeSwitcher } from '../ColorSchemeSwitcher/ColorSchemeSwitcher';
 import './App.css';
 
 const App: FC = () => {
     return (
         <>
-            <h1 className="title">Hello webpack</h1>
+            <div className="page">
+                <h1 className="title">Hello webpack</h1>
+                <ColorSchemeSwitcher />
+            </div>
         </>
     );
 };

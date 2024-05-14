@@ -1,3 +1,10 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
 .title {
     display: flex;
     align-items: center;
@@ -6,11 +13,4 @@
     line-height: 2;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.subtitle {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    font-weight: 700;
 }

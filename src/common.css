@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap");
 
 :root {
-    --color-accent: #f53;
     --color-white: #fff;
-    --container-width: 1445px;
+    --color-black: #000;
+    --container-width: 1440px;
+    --container-padding: 5px;
+    --text-primary: var(--color-black);
+    --bg-primary: var(--color-white);
+
+    color-scheme: light;
+}
+
+[scheme="dark"] {
+    --text-primary: var(--color-white);
+    --bg-primary: var(--color-black);
+
+    color-scheme: dark;
 }
 
 *:not(svg *) {
@@ -26,13 +38,7 @@ img {
 
 body {
     font-family: Rubik, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     font-size: 16px;
-    font-weight: 400;
-    min-width: var(--container-width);
-}
-
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 5px;
 }
